@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>ReadyForRide - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking-container">
+    <div class="booking-card">
+
+        <h2>Complete Your Booking</h2>
+
+        <p>Secure payment using Razorpay Test Mode</p>
+
+        <p id="paymentStatus">
+            Click below to proceed.
+        </p>
+
+        <button id="payBtn" onclick="startRazorpayPayment()">
+            Pay with Razorpay
+        </button>
+
+    </div>
+</div>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js">
+</script>
+
+<script src="payment.js"></script>
+
+</body>
+</html>

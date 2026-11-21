@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Login | ReadyForRide</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-layout">
+
+        <section class="auth-brand">
+            <div class="brand-logo">🚘 ReadyForRide</div>
+
+            <div class="brand-content">
+                <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+                <h1>
+                    Find your ride.<br>
+                    Explore with freedom.
+                </h1>
+
+                <p>
+                    From comfortable city cars to exciting
+                    motorcycles, your next journey is just
+                    a few clicks away.
+                </p>
+
+                <div class="brand-features">
+                    <span>✓ Easy Booking</span>
+                    <span>✓ Secure Payments</span>
+                    <span>✓ Flexible Rentals</span>
+                </div>
+            </div>
+
+            <p class="brand-footer">
+                © 2026 ReadyForRide
+            </p>
+        </section>
+
+        <section class="auth-form-section">
+            <div class="auth-card">
+
+                <div class="mobile-logo">🚘 ReadyForRide</div>
+
+                <h2>Welcome back!</h2>
+                <p class="auth-subtitle">
+                    Sign in to continue your journey.
+                </p>
+
+                <form onsubmit="event.preventDefault(); loginCustomer();">
+
+                    <label for="loginEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button type="submit" class="auth-btn">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <p class="auth-switch">
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </p>
+
+                <div class="auth-bottom">
+                    <span>🔒 Secure authentication</span>
+                    <a href="index.html">Back to Home</a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

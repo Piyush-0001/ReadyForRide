@@ -1,0 +1,30 @@
+
+# Maven generated files
+target/
+*.class
+
+# Eclipse configuration
+.settings/
+.classpath
+.project
+.metadata/
+*.launch
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-secrets.properties
+
+# Private key files
+*.pem
+*.key
+*.p12
+*.jks
+
+# Logs
+*.log
+
+# ZIP files
+*.zip

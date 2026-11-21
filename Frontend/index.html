@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Rental</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+  <div class="brand">
+    <img src="images/logo.jpeg" class="logo-img">
+    <span class="brand-name">Ready for Ride</span>
+  </div>
+
+  <div class="nav-links">
+  <a href="#">Home</a>
+  <a href="#cars">Cars & Bikes</a>
+  
+  <a href="#contact">Contact</a>
+</div>
+<div class="auth-navigation" id="authNavigation">
+
+    <a href="login.html" id="loginNavBtn">
+        Login
+    </a>
+
+    <a href="register.html" id="registerNavBtn">
+        Register
+    </a>
+
+    <button
+        type="button"
+        id="logoutNavBtn"
+        style="display:none;">
+        Logout
+    </button>
+
+</div>
+</div>
+
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <h1>Premium Car & Bike Rentals</h1>
+  <p>Choose your ride. Book in seconds.</p>
+</div>
+
+<!-- CAR LIST -->
+<div class="container" id="cars">
+
+  <h2 class="section-title">Available Cars & Bikes</h2>
+
+  <div class="filters">
+
+  <input type="text" id="searchInput" placeholder="Search vehicle...">
+
+
+  <select id="typeFilter">
+  <option value="">All Vehicles</option>
+  <option value="Car">Cars</option>
+  <option value="Bike">Bikes</option>
+</select>
+
+<!--
+  <select id="gearFilter">
+    <option value="">All Transmission</option>
+    <option value="Manual">Manual</option>
+    <option value="Automatic">Automatic</option>
+  </select>
+-->
+
+  <select id="sortPrice">
+  <option value="">Sort By</option>
+  <option value="low">Price: Low → High</option>
+  <option value="high">Price: High → Low</option>
+</select>
+
+  <button id="resetBtn">Reset</button>
+
+</div>
+
+  <div class="cars" id="carsContainer"></div>
+
+<div class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: <span id="homePhone"></span></p>
+<p>📍 Location: <span id="homeAddress"></span></p>
+
+</div>
+
+<script src="script.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Booking Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="details-page">
+
+  <!-- LEFT : CAR INFO -->
+  <div class="car-info-box">
+
+    <img id="carImg" src="" class="details-img">
+
+    <h2 id="carName"></h2>
+
+    <p class="spec">🚗 Type: <span id="carType"></span></p>
+    <p class="spec">⛽ Fuel: <span id="fuel"></span></p>
+    <p class="spec">👥 Seats: <span id="seats"></span></p>
+
+    <p class="price-big">₹ <span id="price"></span> / day</p>
+
+    <hr>
+
+    <p>✔ Km Limit: <span id="kmLimit"></span> km / day</p>
+    <p>✔ Security Deposit: ₹<span id="security"></span></p>
+
+    <hr>
+    <h3>Owner Contact</h3>
+<p>📞 Phone: <span id="ownerPhone"></span></p>
+<p>📍 Address: <span id="ownerAddress"></span></p>
+
+  </div>
+  
+
+  <!-- RIGHT : BOOKING -->
+  <div class="booking-box">
+
+    <h2>Booking Details</h2>
+
+    <div class="lead-form">
+
+  <input type="text" id="vehicleField" readonly>
+
+  <input type="text" id="custName" placeholder="Your Name">
+  <input type="tel" id="custPhone" placeholder="Phone Number">
+  <input type="email" id="custEmail" placeholder="Email">
+  <input type="text" id="custLocation" placeholder="Your Location">
+
+  <label>From Date</label>
+  <input type="date" id="fromDate">
+
+  <label>To Date</label>
+  <input type="date" id="toDate">
+
+  <div class="summary" id="priceBox">
+    <p id="calcDays"></p>
+    <p id="calcRent"></p>
+    <p id="calcSecurity"></p>
+    <hr>
+    <p id="calcFinal"></p>
+  </div>
+
+  <button onclick="createCustomerBooking()">
+    Book Now
+</button>
+
+</div>
+
+
+
+
+
+  <!--  <button class="proceed" onclick="goToPayment()">Proceed to Pay</button> -->
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
